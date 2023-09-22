@@ -156,3 +156,55 @@
 .custom-select select {
   display: none; /*hide original SELECT element:*/
 }
+
+.c-select {
+  position: relative;
+  width: 100%;
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba($color: #03152b, $alpha: 0.1);
+    border-radius: 5px;
+    border: 0;
+    color: #333;
+    display: block;
+    font-family: "MuseoSans-700";
+    font-size: 14px;
+    margin: 0 auto;
+    outline: none;
+    padding: 8px;
+    text-transform: uppercase;
+    transition: top 0.3s, padding 0.3s;
+    width: 100%;
+
+    option {
+      background-color: #fff;
+      color: #666666;
+      cursor: pointer;
+
+      font-size: 16px;
+      font-family: "MuseoSans-700";
+    }
+  }
+  .c-arrow {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    display: block;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+  }
+  label.error {
+    color: red;
+    margin: 10px 20px;
+    display: block;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+  }
+}

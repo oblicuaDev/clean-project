@@ -16,12 +16,13 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      h1 {
+      h2 {
         position: relative;
         z-index: 2;
         max-width: 600px;
         font-size: 58px;
         line-height: 69px;
+        font-family: "MuseoSans-900";
         width: 100%;
         text-align: center;
         text-shadow: -3px 1px 6px rgba($color: #000000, $alpha: 0.5);
@@ -98,8 +99,14 @@
           font-size: 14px;
           line-height: 17px;
           margin-bottom: 30px;
+          a {
+            text-decoration: underline;
+            &:hover {
+              opacity: 0.5;
+            }
+          }
         }
-        a {
+        a.btn {
           font-size: 11px;
           line-height: 14px;
           border: 1px solid #fff;
@@ -113,7 +120,7 @@
           }
         }
       }
-      &:nth-of-type(1) {
+      &:nth-of-type(1n) {
         .txt {
           background: hsla(17, 100%, 64%, 1);
           background: linear-gradient(
@@ -139,7 +146,7 @@
           );
         }
       }
-      &:nth-of-type(2) {
+      &:nth-of-type(2n) {
         .txt {
           background: hsla(214, 100%, 66%, 1);
           background: linear-gradient(
@@ -165,7 +172,7 @@
           );
         }
       }
-      &:nth-of-type(3) {
+      &:nth-of-type(3n) {
         .txt {
           background: hsla(138, 42%, 60%, 1);
           background: linear-gradient(
@@ -191,7 +198,7 @@
           );
         }
       }
-      &:nth-of-type(4) {
+      &:nth-of-type(4n) {
         .txt {
           background: hsla(212, 67%, 45%, 1);
           background: linear-gradient(
